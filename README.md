@@ -13,3 +13,5 @@ Keep in mind that while some sites related to malware are true attacker infra, t
 
 * Public_Attacktrace_Darkside.zip   - Attacktrace (Procmon) of Darkside Ransomware.
 * Public_Attacktrace_Lockbit.zip    - Attacktrace (Procmon) of Lockbit Ransomware.
+
+* rsakeys_testing.zip               - Pregenerated RSA Keypairs for Microsoft RSACryptoServiceProvider and BouncyCastle
