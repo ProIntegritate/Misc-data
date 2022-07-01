@@ -127,15 +127,6 @@ StartFunction: CtrlRoutine
 ID:9
 RawAccessRead detected:
 RuleName: -
-UtcTime: 2022-06-27 06:39:00.047
-ProcessGuid: {4e77bdf9-28c5-62b2-eb03-000000000000}
-ProcessId: 4	<- Skipp!!!!!!
-Image: System
-Device: \Device\HarddiskVolume8
-
-ID:9
-RawAccessRead detected:
-RuleName: -
 UtcTime: 2022-06-27 06:52:19.652
 ProcessGuid: {4e77bdf9-5390-62b9-6cca-cb3f00000000}
 ProcessId: 21716
