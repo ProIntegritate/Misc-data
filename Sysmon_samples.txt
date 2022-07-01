@@ -1,0 +1,304 @@
+----------------------------------------------------------------------------------------------------
+ID:1
+Process Create:
+RuleName: -
+UtcTime: 2022-06-27 06:25:20.820
+ProcessGuid: {4e77bdf9-4d50-62b9-20dd-983f00000000}
+ProcessId: 11092
+Image: C:\Windows\System32\notepad.exe
+FileVersion: 10.0.19041.1741 (WinBuild.160101.0800)
+Description: Notepad
+Product: Microsoft® Windows® Operating System
+Company: Microsoft Corporation
+OriginalFileName: NOTEPAD.EXE
+CommandLine: notepad  log.txt
+CurrentDirectory: C:\Temp\
+User: PCNAME\Username
+LogonGuid: {4e77bdf9-28e9-62b2-ddba-060000000000}
+LogonId: 0x6BADD
+TerminalSessionId: 1
+IntegrityLevel: Medium
+Hashes: SHA256=0D54DA710565A3820860BE8DF519DF62458E9A997BED3C6925665268ECC1086F
+ParentProcessGuid: {4e77bdf9-4cfa-62b9-faac-953f00000000}
+ParentProcessId: 572
+ParentImage: C:\Windows\System32\cmd.exe
+ParentCommandLine: "C:\WINDOWS\system32\cmd.exe"
+----------------------------------------------------------------------------------------------------
+ID:2
+File creation time changed:
+RuleName: -
+UtcTime: 2022-06-27 06:38:51.109
+ProcessGuid: {4e77bdf9-4f7f-62b9-6dd6-b23f00000000}
+ProcessId: 11372
+Image: C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe
+TargetFilename: C:\Users\Username\AppData\Local\BraveSoftware\Brave-Browser\User Data\645c6015-79ad-4589-8d29-123dd159329f.tmp
+CreationUtcTime: 2022-01-13 09:15:02.364
+PreviousCreationUtcTime: 2022-06-27 06:38:51.087
+----------------------------------------------------------------------------------------------------
+ID:3 - UDP
+Network connection detected:
+RuleName: -
+UtcTime: 2022-06-27 06:25:13.868
+ProcessGuid: {4e77bdf9-28db-62b2-3000-000000003a00}
+ProcessId: 2176
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\LOCAL SERVICE
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.75.1
+SourceHostname: PCNAME
+SourcePort: 68
+SourcePortName: bootpc
+DestinationIsIpv6: false
+DestinationIp: 192.168.75.254
+DestinationHostname: -
+DestinationPort: 67
+DestinationPortName: bootps
+
+EVENTID:3 - TCP
+Network connection detected:
+RuleName: -
+UtcTime: 2022-06-29 14:21:36.755
+ProcessGuid: {4e77bdf9-bbfd-62b9-0acc-cc4100000000}
+ProcessId: 23464
+Image: G:\Steam\steam.exe
+User: PCNAME\Username
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 10.34.206.66
+SourceHostname: PCNAME
+SourcePort: 64063
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 2.22.244.74
+DestinationHostname: a2-22-244-74.deploy.static.akamaitechnologies.com
+DestinationPort: 80
+DestinationPortName: http
+----------------------------------------------------------------------------------------------------
+// ID:4 Sysmon service state changed, Can't care less
+----------------------------------------------------------------------------------------------------
+// ID:5 Process terminated - Don't care, not making a timeline
+----------------------------------------------------------------------------------------------------
+ID:6
+Driver loaded:
+RuleName: -
+UtcTime: 2022-06-27 07:05:05.730
+ImageLoaded: C:\Windows\System32\drivers\mskssrv.sys
+Hashes: SHA256=82C74A2AAACC3CD06187365D40EC1C122A01CDB6915B18FE2DD97E17764DAF21
+Signed: true
+Signature: Microsoft Windows
+SignatureStatus: Valid
+----------------------------------------------------------------------------------------------------
+ID:7
+Image loaded:
+RuleName: -
+UtcTime: 2022-06-27 06:25:20.821
+ProcessGuid: {4e77bdf9-4d50-62b9-20dd-983f00000000}
+ProcessId: 11092
+Image: C:\Windows\System32\notepad.exe
+ImageLoaded: C:\Windows\System32\notepad.exe
+FileVersion: 10.0.19041.1741 (WinBuild.160101.0800)
+Description: Notepad
+Product: Microsoft® Windows® Operating System
+Company: Microsoft Corporation
+OriginalFileName: NOTEPAD.EXE
+Hashes: SHA256=0D54DA710565A3820860BE8DF519DF62458E9A997BED3C6925665268ECC1086F
+Signed: true
+Signature: Microsoft Windows
+SignatureStatus: Valid
+----------------------------------------------------------------------------------------------------
+ID:8
+CreateRemoteThread detected:
+RuleName: -
+UtcTime: 2022-06-27 06:40:27.874
+SourceProcessGuid: {4e77bdf9-28da-62b2-0900-000000003a00}
+SourceProcessId: 860
+SourceImage: C:\Windows\System32\csrss.exe
+TargetProcessGuid: {4e77bdf9-4cfa-62b9-faac-953f00000000}
+TargetProcessId: 572
+TargetImage: C:\Windows\System32\cmd.exe
+NewThreadId: 132
+StartAddress: 0x00007FFFED0EB880
+StartModule: C:\WINDOWS\System32\KERNELBASE.dll
+StartFunction: CtrlRoutine
+----------------------------------------------------------------------------------------------------
+ID:9
+RawAccessRead detected:
+RuleName: -
+UtcTime: 2022-06-27 06:39:00.047
+ProcessGuid: {4e77bdf9-28c5-62b2-eb03-000000000000}
+ProcessId: 4	<- Skipp!!!!!!
+Image: System
+Device: \Device\HarddiskVolume8
+
+ID:9
+RawAccessRead detected:
+RuleName: -
+UtcTime: 2022-06-27 06:52:19.652
+ProcessGuid: {4e77bdf9-5390-62b9-6cca-cb3f00000000}
+ProcessId: 21716
+Image: C:\Windows\System32\backgroundTaskHost.exe
+Device: \Device\HarddiskVolume8
+----------------------------------------------------------------------------------------------------
+ID:10 - ProcessAccess - Too noisy, too little value
+----------------------------------------------------------------------------------------------------
+ID:11
+File created:
+RuleName: -
+UtcTime: 2022-06-27 06:25:12.092
+ProcessGuid: {4e77bdf9-4d31-62b9-c220-983f00000000}
+ProcessId: 7476
+Image: E:\Source\EventlogRT\EventlogRT\bin\Release\EventlogRT.exe
+TargetFilename: C:\Temp\log.txt
+CreationUtcTime: 2022-06-27 06:20:46.691
+----------------------------------------------------------------------------------------------------
+ID:12
+Registry object added or deleted:
+RuleName: -
+EventType: CreateKey
+UtcTime: 2022-06-27 06:25:12.026
+ProcessGuid: {4e77bdf9-28ee-62b2-9400-000000003a00}
+ProcessId: 3836
+Image: C:\WINDOWS\system32\ctfmon.exe
+TargetObject: HKU\S-1-5-21-2667562943-772824472-2821424582-1001\SOFTWARE\Microsoft\Input\TypingInsights
+----------------------------------------------------------------------------------------------------
+ID:13
+Registry value set:
+RuleName: -
+EventType: SetValue
+UtcTime: 2022-06-27 06:25:20.820
+ProcessGuid: {4e77bdf9-4cfa-62b9-faac-953f00000000}
+ProcessId: 572
+Image: C:\WINDOWS\system32\cmd.exe
+TargetObject: HKLM\System\CurrentControlSet\Services\bam\State\UserSettings\S-1-5-21-2668562943-778825572-2871422592-1001\\Device\HarddiskVolume10\Windows\System32\notepad.exe
+Details: Binary Data
+----------------------------------------------------------------------------------------------------
+ID 14: RegistryEvent (Key and Value Rename) - not relevant
+----------------------------------------------------------------------------------------------------
+ID:15
+File stream created:
+RuleName: -
+UtcTime: 2022-06-27 13:16:12.121
+ProcessGuid: {4e77bdf9-ad9b-62b9-abea-a04100000000}
+ProcessId: 13536
+Image: C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe
+TargetFilename: E:\Download\test.jpg:Zone.Identifier
+CreationUtcTime: 2022-06-27 13:16:11.460
+Hash: SHA256=86A3E68762720ABE870D1396794850220935115D3CCC8BB134FFA521244E3EF8
+Contents: [ZoneTransfer]  ZoneId=3  HostUrl=about:internet
+
+*** Compare: ***
+
+EVENTID:15
+File stream created:
+RuleName: -
+UtcTime: 2022-06-28 07:47:35.611
+ProcessGuid: {4e77bdf9-b217-62ba-1266-b54400000000}
+ProcessId: 17900
+Image: C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe
+TargetFilename: E:\Download\test.pdf:Zone.Identifier
+CreationUtcTime: 2022-06-28 07:47:35.195
+Hash: SHA256=EACD09517CE90D34BA562171D15AC40D302F0E691B439F91BE1B6406E25F5913
+Contents: [ZoneTransfer]  ZoneId=3
+----------------------------------------------------------------------------------------------------
+ID:16 - ServiceConfigurationChange
+----------------------------------------------------------------------------------------------------
+ID:17
+Pipe Created:
+RuleName: -
+EventType: CreatePipe
+UtcTime: 2022-06-27 06:40:09.065
+ProcessGuid: {4e77bdf9-4f15-62b9-7563-a43f00000000}
+ProcessId: 21340
+PipeName: \025e8ba65c734f8c9c9ba8af66257c10
+Image: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe
+----------------------------------------------------------------------------------------------------
+ID:18
+Pipe Connected:
+RuleName: -
+EventType: ConnectPipe
+UtcTime: 2022-06-27 06:40:09.068
+ProcessGuid: {4e77bdf9-4f15-62b9-7563-a43f00000000}
+ProcessId: 21340
+PipeName: \4d3f2bd0706b4ca992721e04aeb9bac9
+Image: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe
+----------------------------------------------------------------------------------------------------
+EVENTID:19
+WmiEventFilter activity detected:
+RuleName: -
+EventType: WmiFilterEvent
+UtcTime: 2022-07-01 16:35:20.323
+Operation: Created
+User: PCNAME\Username
+EventNamespace:  "root\\cimv2"
+Name:  "TESTFilter"
+Query:  "SELECT * FROM __InstanceModificationEvent WITHIN 60 WHERE TargetInstance ISA 'Win32_PerfFormattedData_PerfOS_System'"
+----------------------------------------------------------------------------------------------------
+EVENTID:20
+WmiEventConsumer activity detected:
+RuleName: -
+EventType: WmiConsumerEvent
+UtcTime: 2022-07-01 16:35:28.319
+Operation: Created
+User: PCNAME\Username
+Name:  "TESTFilter"
+Type: Command Line
+Destination:  "C:\\Windows\\System32\\Notepad.exe"
+----------------------------------------------------------------------------------------------------
+EVENTID:21
+WmiEventConsumerToFilter activity detected:
+RuleName: -
+EventType: WmiBindingEvent
+UtcTime: 2022-07-01 16:35:33.054
+Operation: Created
+User: PCNAME\Username
+Consumer:  "CommandLineEventConsumer.Name=\"TESTFilter\""
+Filter:  "__EventFilter.Name=\"TESTFilter\""
+----------------------------------------------------------------------------------------------------
+ID:22 - With IPv4
+Dns query:
+RuleName: -
+UtcTime: 2022-06-27 06:49:40.840
+ProcessGuid: {4e77bdf9-4f80-62b9-790e-b33f00000000}
+ProcessId: 10508
+QueryName: go-updater.brave.com
+QueryStatus: 0
+QueryResults: type:  5 go-updater-1830831421.us-west-2.elb.amazonaws.com;100.20.119.169;44.231.64.72;34.213.111.63;52.35.138.53;52.33.147.21;35.162.30.103;54.203.37.123;34.209.190.82;
+Image: C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe
+
+ID:22 - With IPv6
+Dns query:
+RuleName: -
+UtcTime: 2022-06-27 06:52:00.362
+ProcessGuid: {4e77bdf9-5390-62b9-6cca-cb3f00000000}
+ProcessId: 21716
+QueryName: api.msn.com
+QueryStatus: 0
+QueryResults: type:  5 api-msn-com.a-0003.a-msedge.net;type:  5 a-0003.a-msedge.net;::ffff:204.79.197.203;
+Image: C:\Windows\System32\backgroundTaskHost.exe
+----------------------------------------------------------------------------------------------------
+ID:23 FileDelete (File Delete archived) - Largely irrelevant
+----------------------------------------------------------------------------------------------------
+ID:24
+Clipboard changed:
+RuleName: -
+UtcTime: 2022-06-27 06:39:25.305
+ProcessGuid: {4e77bdf9-4cfa-62b9-faac-953f00000000}
+ProcessId: 572
+Image: C:\Windows\System32\cmd.exe
+Session: 1
+ClientInfo: user: PCNAME\Username
+Hashes: SHA256=9132E06D24D22C75AEDF291A2E43032DDEED4A3F4B0F46AC6EEF4056C2BA5DC6
+Archived: true
+----------------------------------------------------------------------------------------------------
+ID:25
+Process Tampering:
+Rulename: -
+UtcTime: 2022-06-27 06:42:15.381
+ProcessGuid: {4e77bdf9-4d50-62b9-20dd-983f00000000}
+ProcessId: 12817
+Image: C:\Windows\System32\notepad.exe
+Type: Image is locked for access
+----------------------------------------------------------------------------------------------------
