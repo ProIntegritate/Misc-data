@@ -5,13 +5,16 @@ wevtutil qe "Microsoft-Windows-Sysmon/Operational" /e:root /q:"*[System [(EventI
 
 Extract specific time period:
 ```
-wevtutil qe "Microsoft-Windows-Sysmon/Operational" /e:root /q:"*[System [TimeCreated[@SystemTime>='2022-07-10T01:00:00' and @SystemTime<'2022-07-10T01:05:00']] ]" /F:text
+wevtutil qe "Microsoft-Windows-Sysmon/Operational" /e:root /q:"*[System [TimeCreated[@SystemTime>='2022-07-10T01:00:00' and @SystemTime<'2022-07-10T02:00:00']] ]" /F:text
 ```
 
 Combining both:
 ```
 wevtutil qe "Microsoft-Windows-Sysmon/Operational" /e:root /q:"*[System [TimeCreated[@SystemTime>='2022-07-10T01:00:00' and @SystemTime<'2022-07-10T02:00:00']]] and *[System [(EventID=1)]]" /F:text
 ```
+
+These above statements output into text format, if you want the XML structure, just remove "/F:text" from the line.
+
 
 *Note, there are 3 (!) date fields in ETL/Eventlog Event records - do not get these confused:*
 
