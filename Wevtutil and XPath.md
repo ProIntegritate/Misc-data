@@ -15,12 +15,15 @@ wevtutil qe "Microsoft-Windows-Sysmon/Operational" /e:root /q:"*[System [TimeCre
 
 Note, there are 3 date fields, don't get these confused:
 
+This is the Eventlog local time, it says ZULU time at the end but really isn't. Missing +2h indicator for that to be true.
 ```
-"Date: 2022-07-10T03:59:21.2140000Z" <- Eventlog local time, says ZULU time at the end but really isn't. Missing +2h indicator.
+"Date: 2022-07-10T03:59:21.2140000Z"
 ```
+The second timestamp is Sysmon time, this is REALLY Zulu/UTC time.
 ```
-"UtcTime: 2022-07-10 01:59:21.212"  <- Sysmon time, this is REALLY Zulu/UTC time.
+"UtcTime: 2022-07-10 01:59:21.212" 
 ```
+[TimeCreated] XML element, this is what XPATH locks on to when searching:
 ```
-<TimeCreated SystemTime='2022-07-10T01:59:21.2123412Z'/>	<- This is what XPATH locks on to: [TimeCreated].
+<TimeCreated SystemTime='2022-07-10T01:59:21.2123412Z'/>
 ```
